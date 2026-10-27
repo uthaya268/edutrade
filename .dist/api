@@ -1,0 +1,482 @@
+product_list=[
+  {
+    "id": 1,
+    "name": "Arduino Uno R3",
+    "category": "Electronics",
+    "price": 850,
+    "date": "14-11-2025",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Engineering Handbook",
+    "category": "Books",
+    "price": 780,
+    "date": "03-04-2024",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+  },
+  {
+    "id": 3,
+    "name": "Digital Multimeter",
+    "category": "Lab Equipments",
+    "price": 1200,
+    "date": "27-08-2026",
+    "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500"
+  },
+  {
+    "id": 4,
+    "name": "Notebook Set (5 Pack)",
+    "category": "Stationery",
+    "price": 300,
+    "date": "19-02-2025",
+    "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=500"
+  },
+  {
+    "id": 5,
+    "name": "Robotics Project Kit",
+    "category": "Project Materials",
+    "price": 2150,
+    "date": "08-12-2024",
+    "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500"
+  },
+  {
+    "id": 6,
+    "name": "Acrylic Paint Set",
+    "category": "Creative Tools",
+    "price": 650,
+    "date": "11-07-2026",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500"
+  },
+  {
+    "id": 7,
+    "name": "Data Structures with C++",
+    "category": "Books",
+    "price": 560,
+    "date": "22-10-2025",
+    "image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500"
+  },
+  {
+    "id": 8,
+    "name": "Scientific Calculator",
+    "category": "Electronics",
+    "price": 950,
+    "date": "17-05-2024",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+  },
+  {
+    "id": 9,
+    "name": "Microscope Slides Set",
+    "category": "Lab Equipments",
+    "price": 480,
+    "date": "05-01-2026",
+    "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500"
+  },
+  {
+    "id": 10,
+    "name": "Sticky Notes Pack",
+    "category": "Stationery",
+    "price": 180,
+    "date": "30-09-2024",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500"
+  },
+  {
+    "id": 11,
+    "name": "Breadboard Kit",
+    "category": "Project Materials",
+    "price": 420,
+    "date": "13-03-2025",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+  },
+  {
+    "id": 12,
+    "name": "Sketch Marker Set",
+    "category": "Creative Tools",
+    "price": 720,
+    "date": "09-06-2024",
+    "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=500"
+  },
+  {
+    "id": 13,
+    "name": "Python Programming Guide",
+    "category": "Books",
+    "price": 690,
+    "date": "18-08-2026",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+  },
+  {
+    "id": 14,
+    "name": "Bluetooth Module HC-05",
+    "category": "Electronics",
+    "price": 350,
+    "date": "02-12-2024",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+  },
+  {
+    "id": 15,
+    "name": "Beaker Set (250ml)",
+    "category": "Lab Equipments",
+    "price": 560,
+    "date": "24-04-2025",
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500"
+  },
+  {
+    "id": 16,
+    "name": "Premium Pen Pack",
+    "category": "Stationery",
+    "price": 260,
+    "date": "07-11-2026",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500"
+  },
+  {
+    "id": 17,
+    "name": "Raspberry Pi Case",
+    "category": "Project Materials",
+    "price": 490,
+    "date": "15-01-2024",
+    "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500"
+  },
+  {
+    "id": 18,
+    "name": "Watercolor Brush Set",
+    "category": "Creative Tools",
+    "price": 410,
+    "date": "29-05-2025",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500"
+  },
+  {
+    "id": 19,
+    "name": "Artificial Intelligence Basics",
+    "category": "Books",
+    "price": 840,
+    "date": "10-02-2026",
+    "image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500"
+  },
+  {
+    "id": 20,
+    "name": "USB Logic Analyzer",
+    "category": "Electronics",
+    "price": 1650,
+    "date": "21-09-2025",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+  },
+  {
+    "id": 21,
+    "name": "Test Tube Rack",
+    "category": "Lab Equipments",
+    "price": 390,
+    "date": "16-07-2024",
+    "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500"
+  },
+  {
+    "id": 22,
+    "name": "A4 Printing Paper",
+    "category": "Stationery",
+    "price": 420,
+    "date": "28-03-2026",
+    "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=500"
+  },
+  {
+    "id": 23,
+    "name": "Servo Motor Kit",
+    "category": "Project Materials",
+    "price": 780,
+    "date": "04-10-2025",
+    "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500"
+  },
+  {
+    "id": 24,
+    "name": "Canvas Board",
+    "category": "Creative Tools",
+    "price": 340,
+    "date": "12-06-2026",
+    "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=500"
+  },
+  {
+    "id": 25,
+    "name": "Computer Networks Textbook",
+    "category": "Books",
+    "price": 910,
+    "date": "01-09-2024",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+  },
+  {
+    "id": 26,
+    "name": "ESP32 Development Board",
+    "category": "Electronics",
+    "price": 980,
+    "date": "26-02-2026",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+  },
+  {
+    "id": 27,
+    "name": "Digital Weighing Scale",
+    "category": "Lab Equipments",
+    "price": 1750,
+    "date": "08-08-2025",
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500"
+  },
+  {
+    "id": 28,
+    "name": "Highlighter Pack",
+    "category": "Stationery",
+    "price": 240,
+    "date": "20-11-2024",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500"
+  },
+  {
+    "id": 29,
+    "name": "PCB Prototype Board",
+    "category": "Project Materials",
+    "price": 360,
+    "date": "06-01-2025",
+    "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500"
+  },
+  {
+    "id": 30,
+    "name": "Calligraphy Pen Set",
+    "category": "Creative Tools",
+    "price": 590,
+    "date": "23-12-2026",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500"
+  },
+  {
+    "id": 31,
+    "name": "Operating Systems Concepts",
+    "category": "Books",
+    "price": 850,
+    "date": "17-04-2025",
+    "image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500"
+  },
+  {
+    "id": 32,
+    "name": "Power Bank 10000mAh",
+    "category": "Electronics",
+    "price": 1450,
+    "date": "09-10-2024",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+  },
+  {
+    "id": 33,
+    "name": "Volumetric Flask",
+    "category": "Lab Equipments",
+    "price": 630,
+    "date": "13-05-2026",
+    "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500"
+  },
+  {
+    "id": 34,
+    "name": "Desk Organizer",
+    "category": "Stationery",
+    "price": 520,
+    "date": "25-07-2025",
+    "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=500"
+  },
+  {
+    "id": 35,
+    "name": "Jumper Wire Set",
+    "category": "Project Materials",
+    "price": 290,
+    "date": "31-03-2024",
+    "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500"
+  },
+  {
+    "id": 36,
+    "name": "Color Pencil Set (48 Colors)",
+    "category": "Creative Tools",
+    "price": 810,
+    "date": "14-08-2025",
+    "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=500"
+  },
+  {
+    "id": 37,
+    "name": "Database Systems",
+    "category": "Books",
+    "price": 740,
+    "date": "19-01-2026",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+  },
+  {
+    "id": 38,
+    "name": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 690,
+    "date": "02-06-2025",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+  },
+  {
+    "id": 39,
+    "name": "Lab Safety Goggles",
+    "category": "Lab Equipments",
+    "price": 320,
+    "date": "11-12-2024",
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500"
+  },
+  {
+    "id": 40,
+    "name": "File Folder Set",
+    "category": "Stationery",
+    "price": 270,
+    "date": "05-09-2026",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500"
+  },
+  {
+    "id": 41,
+    "name": "DC Motor Kit",
+    "category": "Project Materials",
+    "price": 560,
+    "date": "18-02-2025",
+    "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500"
+  },
+  {
+    "id": 42,
+    "name": "DIY Craft Kit",
+    "category": "Creative Tools",
+    "price": 930,
+    "date": "27-10-2024",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500"
+  },
+  {
+    "id": 43,
+    "name": "Cloud Computing Essentials",
+    "category": "Books",
+    "price": 820,
+    "date": "07-03-2026",
+    "image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500"
+  },
+  {
+    "id": 44,
+    "name": "Soldering Iron Kit",
+    "category": "Electronics",
+    "price": 1100,
+    "date": "16-01-2025",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+  },
+  {
+    "id": 45,
+    "name": "Graduated Cylinder",
+    "category": "Lab Equipments",
+    "price": 450,
+    "date": "22-08-2024",
+    "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500"
+  },
+  {
+    "id": 46,
+    "name": "Correction Tape",
+    "category": "Stationery",
+    "price": 140,
+    "date": "30-04-2026",
+    "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=500"
+  },
+  {
+    "id": 47,
+    "name": "Sensor Module Pack",
+    "category": "Project Materials",
+    "price": 980,
+    "date": "09-11-2025",
+    "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500"
+  },
+  {
+    "id": 48,
+    "name": "Origami Paper Kit",
+    "category": "Creative Tools",
+    "price": 260,
+    "date": "04-05-2024",
+    "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=500"
+  },
+  {
+    "id": 49,
+    "name": "Machine Learning Handbook",
+    "category": "Books",
+    "price": 990,
+    "date": "15-06-2025",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+  },
+  {
+    "id": 50,
+    "name": "USB-C Hub",
+    "category": "Electronics",
+    "price": 1350,
+    "date": "28-01-2026",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+  },
+  {
+    "id": 51,
+    "name": "pH Test Strips",
+    "category": "Lab Equipments",
+    "price": 380,
+    "date": "12-09-2025",
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500"
+  },
+  {
+    "id": 52,
+    "name": "Binder Clips Set",
+    "category": "Stationery",
+    "price": 190,
+    "date": "21-07-2024",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500"
+  },
+  {
+    "id": 53,
+    "name": "IoT Starter Kit",
+    "category": "Project Materials",
+    "price": 2490,
+    "date": "06-10-2026",
+    "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500"
+  },
+  {
+    "id": 54,
+    "name": "Modeling Clay Set",
+    "category": "Creative Tools",
+    "price": 540,
+    "date": "18-03-2025",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500"
+  },
+  {
+    "id": 55,
+    "name": "Cyber Security Fundamentals",
+    "category": "Books",
+    "price": 875,
+    "date": "29-12-2024",
+    "image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500"
+  },
+  {
+    "id": 56,
+    "name": "Portable SSD 512GB",
+    "category": "Electronics",
+    "price": 4200,
+    "date": "10-08-2026",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+  },
+  {
+    "id": 57,
+    "name": "Laboratory Thermometer",
+    "category": "Lab Equipments",
+    "price": 520,
+    "date": "23-02-2025",
+    "image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500"
+  },
+  {
+    "id": 58,
+    "name": "Graph Notebook",
+    "category": "Stationery",
+    "price": 230,
+    "date": "01-06-2024",
+    "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=500"
+  },
+  {
+    "id": 59,
+    "name": "Prototype Chassis",
+    "category": "Project Materials",
+    "price": 760,
+    "date": "26-11-2025",
+    "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500"
+  },
+  {
+    "id": 60,
+    "name": "Professional Sketchbook",
+    "category": "Creative Tools",
+    "price": 480,
+    "date": "17-04-2026",
+    "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=500"
+  }
+];  can you regenerate this json file to add the some "(5 images per each id as image1, image2...image5),(description is upto 15 words for each id),(user id who seels the product), and some product details for example if the product is book then add the author, publication, edition, condition of the product, date of purchasing " that can be related to other products that the product is "ardino board" it has not have the details like author, publication. so you can add the manufacture company and model 

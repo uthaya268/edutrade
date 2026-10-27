@@ -1,0 +1,380 @@
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+
+.login-container {
+    position: relative;
+    top:0px;
+    width: 420px;
+    max-width: 90%;
+    background: white;
+    border-radius: 18px;
+
+    padding: 35px 40px;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+
+    animation: loginOpen 0.3s ease;
+}
+
+
+@keyframes loginOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* CLOSE BUTTON */
+
+.login-close {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 22px;
+
+    color: #777;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.login-close:hover {
+    color: #d62828;
+
+    transform: rotate(90deg);
+}
+
+
+/* HEADER */
+
+.login-header {
+    text-align: center;
+
+    margin-bottom:0px;
+}
+
+
+.login-icon {
+    width: 65px;
+    height: 65px;
+
+    margin-left: 40%;
+
+    border-radius: 50%;
+
+    background: #0d3b66;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+}
+
+
+.login-header h2 {
+    margin: 0;
+
+    color: #0d3b66;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+
+.login-header p {
+    margin-top: 0px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* INPUT GROUP */
+
+.input-group {
+    margin-bottom: 8px;
+}
+
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.input-box {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    transition: 0.3s;
+
+    background: white;
+}
+
+
+.input-box:focus-within {
+    border-color: #0d3b66;
+
+    box-shadow: 0 0 0 3px rgba(13, 59, 102, 0.1);
+}
+
+
+.input-box > i:first-child {
+    color: #0d3b66;
+
+    font-size: 18px;
+
+    margin-right: 10px;
+}
+
+
+.input-box input {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 15px;
+
+    color: #333;
+
+    background: transparent;
+}
+
+
+.input-box input::placeholder {
+    color: #aaa;
+}
+
+
+/* PASSWORD ICON */
+
+.password-icon {
+    cursor: pointer;
+
+    margin-left: 10px;
+
+    color: #777 !important;
+
+    transition: 0.3s;
+}
+
+
+.password-icon:hover {
+    color: #0d3b66 !important;
+}
+
+
+/* ERROR */
+
+.login-error {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin: 5px 0 15px;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    background: #ffeaea;
+
+    color: #d62828;
+
+    font-size: 13px;
+}
+
+
+/* TERMS */
+
+.login-condition {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin: 5px 0 18px;
+}
+
+
+.check-box {
+    margin-top: 3px;
+
+    cursor: pointer;
+}
+
+
+.login-condition p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+.login-condition span {
+    color: #0d3b66;
+
+    font-weight: 600;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-submit {
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #22c55e;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+
+.login-submit:hover {
+    background: #16a34a;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(34, 197, 94, 0.25);
+}
+
+
+.login-submit:active {
+    transform: translateY(0);
+}
+
+
+/* SWITCH */
+
+.login-switch {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+.login-switch p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+.login-switch span {
+    margin-left: 5px;
+
+    color: #0d3b66;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.login-switch span:hover {
+    text-decoration: underline;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+    .login-container {
+        padding: 30px 25px;
+
+        width: 90%;
+    }
+
+    .login-header h2 {
+        font-size: 24px;
+    }
+
+}

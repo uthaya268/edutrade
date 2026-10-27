@@ -1,0 +1,86 @@
+.orders-page {
+    min-height: 80vh;
+    padding: 40px;
+    background: #f5f7fa;
+}
+
+.orders-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.orders-container h1 {
+    color: #0D3B66;
+    margin-bottom: 30px;
+}
+
+.no-orders {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.no-orders i {
+    font-size: 60px;
+    color: #0D3B66;
+}
+
+.no-orders h2 {
+    margin: 15px 0 8px;
+}
+
+.no-orders p {
+    color: #777;
+}
+
+.no-orders button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #0D3B66;
+    color: white;
+    cursor: pointer;
+}
+
+.no-orders button:hover {
+    background: #082c4d;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    gap: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.order-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.order-details h3 {
+    margin-top: 10px;
+    color: #0D3B66;
+}
+
+.order-details p {
+    margin: 8px 0;
+}
+
+.order-status {
+    color: #22C55E;
+    font-weight: bold;
+}

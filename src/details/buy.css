@@ -1,0 +1,27 @@
+.buy{
+    margin-top: 25px;
+    margin-left: -670px;
+    display: flex;
+    position:sticky;
+    margin-bottom: 50px;
+}
+.buy button{
+    width:270px;
+    margin-right: 100px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border:1px solid rgb(57, 152, 44);
+    transition: 1s;
+    cursor: pointer;
+
+}
+.buy button:hover{
+    background-color:rgb(57, 152, 44);
+    color:white;
+}
+
+.buy button i{
+    font-size: 25px;
+}

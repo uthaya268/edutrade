@@ -1,0 +1,410 @@
+.sell-page {
+    min-height: 100vh;
+    background: #f5f7fa;
+    padding: 40px 20px;
+}
+
+.sell-container {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+
+
+/* ================= HEADER ================= */
+
+.sell-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sell-header h1 {
+    color: #0d3b66;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.sell-header p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* ================= CARD ================= */
+
+.sell-card {
+    background: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.sell-card h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #0d3b66;
+
+    font-size: 21px;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.sell-card h2 i {
+    color: #22c55e;
+}
+
+
+/* ================= FORM ================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d5d9df;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background: white;
+
+    transition: 0.2s;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0d3b66;
+
+    box-shadow: 0 0 0 3px rgba(13, 59, 102, 0.08);
+}
+
+
+/* ================= TWO COLUMNS ================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* ================= PRICE ================= */
+
+.price-input {
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #d5d9df;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.price-input span {
+    padding-left: 14px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: #0d3b66;
+}
+
+.price-input input {
+    border: none;
+
+    box-shadow: none;
+}
+
+.price-input:focus-within {
+    border-color: #0d3b66;
+
+    box-shadow: 0 0 0 3px rgba(13, 59, 102, 0.08);
+}
+
+
+/* ================= IMAGE UPLOAD ================= */
+
+.image-info {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 190px;
+
+    border: 2px dashed #b8c3ce;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    border-color: #0d3b66;
+
+    background: #f8fbff;
+}
+
+.upload-box i {
+    font-size: 45px;
+
+    color: #0d3b66;
+
+    margin-bottom: 10px;
+}
+
+.upload-box h3 {
+    margin: 5px 0;
+
+    color: #333;
+}
+
+.upload-box p {
+    margin: 5px;
+
+    color: #777;
+}
+
+.upload-box span {
+    font-size: 12px;
+
+    color: #999;
+}
+
+
+/* ================= IMAGE PREVIEW ================= */
+
+.image-preview {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(140px, 1fr));
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.preview-item {
+    position: relative;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: #fff;
+}
+
+.preview-item img {
+    display: block;
+
+    width: 100%;
+
+    height: 130px;
+
+    object-fit: cover;
+}
+
+.preview-item span {
+    display: block;
+
+    padding: 8px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #555;
+}
+
+
+/* ================= POLICY ================= */
+
+.selling-policy {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin: 20px 0;
+
+    padding: 15px;
+
+    background: #fff;
+
+    border-radius: 8px;
+
+    border: 1px solid #e5e7eb;
+}
+
+.selling-policy input {
+    margin-top: 3px;
+
+    width: 17px;
+    height: 17px;
+}
+
+.selling-policy label {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #555;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.sell-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.cancel-btn,
+.sell-btn {
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.cancel-btn {
+    background: white;
+
+    color: #555;
+
+    border: 1px solid #ccc;
+}
+
+.cancel-btn:hover {
+    background: #f1f1f1;
+}
+
+.sell-btn {
+    background: #0d3b66;
+
+    color: white;
+
+    border: none;
+}
+
+.sell-btn:hover {
+    background: #092c4c;
+
+    transform: translateY(-1px);
+}
+
+.sell-btn i {
+    margin-right: 8px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .sell-page {
+        padding: 20px 12px;
+    }
+
+    .sell-header h1 {
+        font-size: 26px;
+    }
+
+    .sell-card {
+        padding: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .sell-actions {
+        flex-direction: column-reverse;
+    }
+
+    .cancel-btn,
+    .sell-btn {
+        width: 100%;
+    }
+
+}
+.s-back{
+    font-size: 25px;
+    margin-top: -20px;
+    color:blue;
+    cursor: pointer;
+}
+.s-back i:hover{
+    color: rgb(91, 91, 250);
+}

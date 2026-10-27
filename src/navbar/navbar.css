@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+/* =========================================
+   MAIN NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    height: 100px;
+
+    background: #2f9e26;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 30px;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    z-index: 1000;
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.nav-logo {
+    width: 190px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+}
+
+.nav-logo img {
+    width: 175px;
+    height: 75px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-box {
+    width: 350px;
+
+    flex-shrink: 1;
+}
+
+.search-box input {
+    width: 100%;
+    height: 46px;
+
+    padding: 0 22px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 25px;
+
+    background: white;
+
+    font-size: 16px;
+
+    color: #333;
+
+    box-sizing: border-box;
+}
+
+.search-box input::placeholder {
+    color: #777;
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 27px;
+
+    margin: 0;
+    padding: 0;
+
+    flex: 1;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    color: white;
+
+    font-size: 18px;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.nav-links li:hover {
+    transform: translateY(-2px);
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    white-space: nowrap;
+}
+
+.nav-links li a:hover {
+    color: white;
+}
+
+
+/* =========================================
+   NAV ICONS
+========================================= */
+
+.nav-links i {
+    font-size: 20px;
+}
+
+
+/* =========================================
+   CART COUNT
+========================================= */
+
+.cart-count {
+    position: absolute;
+
+    top: -10px;
+    right: -14px;
+
+    min-width: 19px;
+    height: 19px;
+
+    padding: 0 5px;
+
+    border-radius: 20px;
+
+    background: #ff3333;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    border: 2px solid #2f9e26;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.log-but {
+    height: 45px;
+
+    min-width: 105px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: white;
+
+    color: #111;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    white-space: nowrap;
+
+    flex-shrink: 0;
+
+    transition: all 0.25s ease;
+}
+
+.log-but:hover {
+    background: #f2f2f2;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.log-but:active {
+    transform: translateY(0);
+}
+
+.log-but i {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   CATEGORY DROPDOWN - HIDDEN
+========================================= */
+
+.category {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    padding: 0;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition: all 0.25s ease;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+
+    z-index: 999;
+}
+
+
+/* =========================================
+   CATEGORY DROPDOWN - SHOW
+========================================= */
+
+.category-y {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    padding: 18px 30px;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+    transition: all 0.25s ease;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+
+    box-sizing: border-box;
+
+    z-index: 999;
+}
+
+
+/* =========================================
+   CATEGORY ITEMS
+========================================= */
+
+.category a,
+.category-y a {
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    background: #f5f7fa;
+
+    border: 1px solid #e0e4e8;
+
+    color: #0d3b66;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.category a:hover,
+.category-y a:hover {
+    background: #0d3b66;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(13, 59, 102, 0.2);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        gap: 20px;
+
+        padding: 10px 20px;
+    }
+
+    .nav-logo {
+        width: 160px;
+    }
+
+    .nav-logo img {
+        width: 150px;
+    }
+
+    .search-box {
+        width: 280px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links li,
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+    .nav-links i {
+        font-size: 18px;
+    }
+
+    .log-but {
+        min-width: 90px;
+
+        padding: 0 14px;
+    }
+}
+
+
+/* =========================================
+   SMALL LAPTOP
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .nav-logo {
+        width: 140px;
+    }
+
+    .nav-logo img {
+        width: 135px;
+    }
+
+    .search-box {
+        width: 220px;
+    }
+
+    .nav-links {
+        gap: 13px;
+    }
+
+    .nav-links li,
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .nav-links i {
+        font-size: 16px;
+    }
+
+    .log-but {
+        min-width: 80px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .navbar {
+        height: auto;
+
+        min-height: 100px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        padding: 15px;
+    }
+
+    .nav-logo {
+        width: 150px;
+        height: 65px;
+    }
+
+    .nav-logo img {
+        width: 140px;
+        height: 60px;
+    }
+
+    .search-box {
+        width: 250px;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        justify-content: center;
+
+        order: 3;
+
+        gap: 20px;
+    }
+
+    .log-but {
+        height: 40px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .navbar {
+        padding: 12px;
+    }
+
+    .search-box {
+        width: 100%;
+
+        order: 2;
+    }
+
+    .nav-links {
+        order: 3;
+
+        gap: 12px;
+    }
+
+    .nav-links li,
+    .nav-links li a {
+        font-size: 12px;
+    }
+
+    .nav-links i {
+        font-size: 14px;
+    }
+
+    .log-but {
+        font-size: 13px;
+
+        min-width: 75px;
+
+        padding: 0 10px;
+    }
+}
